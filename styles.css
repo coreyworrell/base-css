@@ -132,18 +132,10 @@
 			-webkit-border-radius:3px;
 			        border-radius:3px;
 			background-color:#EEE;
-			background-image:-moz-linear-gradient(
-				top,
-				rgba(255,255,255,0.2) 0%,
-				rgba(0,0,0,0.2) 100%
-			);
-			background-image:-webkit-gradient(
-				linear,
-				left top,
-				left bottom,
-				color-stop(0%, rgba(255,255,255,0.2)),
-				color-stop(100%, rgba(0,0,0,0.2))
-			);
+			background-image:-moz-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+			background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.2)), color-stop(100%, rgba(0,0,0,0.2)));
+			background-image:-webkit-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+			background-image:-o-linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.2));
 			   -moz-box-shadow:inset 1px 1px rgba(255,255,255,0.8);
 			-webkit-box-shadow:inset 1px 1px rgba(255,255,255,0.8);
 			        box-shadow:inset 1px 1px rgba(255,255,255,0.8);
@@ -155,7 +147,7 @@
 		a.button {outline:0;}
 
 		/* Default hover */
-		button:hover, .button:hover, button:focus, .button :focus {text-decoration:none; background-color:#F9F9F9;}
+		button:hover, .button:hover, button:active, .button:active {text-decoration:none; background-color:#F9F9F9;}
 
 		/* Default active */
 		button:active, .button:active {
@@ -163,18 +155,10 @@
 			margin-bottom:1px;
 			border-bottom-width:1px;
 			background-color:#F9F9F9;
-			background-image:-moz-linear-gradient(
-				top,
-				rgba(0,0,0,0.2) 0%,
-				rgba(255,255,255,0.2) 100%
-			);
-			background-image:-webkit-gradient(
-				linear,
-				left top,
-				left bottom,
-				color-stop(0%, rgba(0,0,0,0.2)),
-				color-stop(100%, rgba(255,255,255,0.2))
-			);
+			background-image:-moz-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.2));
+			background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,0,0,0.2)), color-stop(100%, rgba(255,255,255,0.2)));
+			background-image:-webkit-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.2));
+			background-image:-o-linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.2));
 		}
 		
 		/* Button sizes */
